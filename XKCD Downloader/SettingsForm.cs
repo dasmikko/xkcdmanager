@@ -97,7 +97,16 @@ namespace XKCD_Downloader
             intervalComboBox.DisplayMember = "name";
             intervalComboBox.ValueMember = "minute";
 
-            intervalComboBox.SelectedValue = Properties.Settings.Default["update_check_interval"];
+            // Set the correct index for the combobox
+            for (int i = 0; i < intervalComboBox.Items.Count; i++)
+            {
+                Console.WriteLine(intervals[i].minute);
+                Console.WriteLine(Properties.Settings.Default["update_check_interval"]);
+                if (intervals[i].minute == (int)Properties.Settings.Default["update_check_interval"])
+                {
+                    intervalComboBox.SelectedIndex = i;
+                }
+            }
 
 
             // About tab
@@ -109,17 +118,6 @@ namespace XKCD_Downloader
                 settingsVersionLabel.Text = "Debug version";
             }
 
-        }
-
-        private void intervalComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            Interval selectedItem = (Interval)intervalComboBox.SelectedItem;
-            Properties.Settings.Default["update_check_interval"] = selectedItem.minute;
-            Properties.Settings.Default.Save();
-
-            Notifications.Notifications.StartUpdateCheckingTimer(selectedItem.minute);
-
-            refreshAllFields();
         }
 
         private void NotifyWhenNewComicsCheckbox_CheckedChanged(object sender, EventArgs e)
@@ -141,6 +139,20 @@ namespace XKCD_Downloader
         private void githublinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             System.Diagnostics.Process.Start("https://github.com/dasmikko/xkcdmanager");
+        }
+
+        private void intervalComboBox_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            Interval selectedItem = (Interval)intervalComboBox.SelectedItem;
+            Properties.Settings.Default["update_check_interval"] = selectedItem.minute;
+            Properties.Settings.Default.Save();
+            Console.WriteLine("Saved interval! " + selectedItem.minute);
+
+
+
+            Notifications.Notifications.StartUpdateCheckingTimer(selectedItem.minute);
+
+            refreshAllFields();
         }
     }
 }

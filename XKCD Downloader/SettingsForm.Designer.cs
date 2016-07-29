@@ -217,7 +217,7 @@
             this.intervalComboBox.Name = "intervalComboBox";
             this.intervalComboBox.Size = new System.Drawing.Size(121, 21);
             this.intervalComboBox.TabIndex = 2;
-            this.intervalComboBox.SelectedIndexChanged += new System.EventHandler(this.intervalComboBox_SelectedIndexChanged);
+            this.intervalComboBox.SelectionChangeCommitted += new System.EventHandler(this.intervalComboBox_SelectionChangeCommitted);
             // 
             // label2
             // 
@@ -295,8 +295,8 @@
             this.tableLayoutPanel1.Location = new System.Drawing.Point(6, 36);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(620, 100);
             this.tableLayoutPanel1.TabIndex = 3;
@@ -322,7 +322,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(3, 13);
+            this.label5.Location = new System.Drawing.Point(3, 20);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(38, 13);
             this.label5.TabIndex = 3;
@@ -342,7 +342,7 @@
             // 
             this.githublinkLabel.AutoSize = true;
             this.githublinkLabel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.githublinkLabel.Location = new System.Drawing.Point(65, 13);
+            this.githublinkLabel.Location = new System.Drawing.Point(65, 20);
             this.githublinkLabel.Name = "githublinkLabel";
             this.githublinkLabel.Size = new System.Drawing.Size(214, 13);
             this.githublinkLabel.TabIndex = 4;
@@ -353,7 +353,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(3, 26);
+            this.label6.Location = new System.Drawing.Point(3, 40);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(38, 13);
             this.label6.TabIndex = 5;
@@ -362,7 +362,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(65, 26);
+            this.label7.Location = new System.Drawing.Point(65, 40);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(86, 13);
             this.label7.TabIndex = 6;

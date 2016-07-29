@@ -143,12 +143,12 @@
             this.nimenustripOpen,
             this.nimenustripClose});
             this.notifyIconMenuStrip.Name = "notifyIconMenuStrip";
-            this.notifyIconMenuStrip.Size = new System.Drawing.Size(153, 70);
+            this.notifyIconMenuStrip.Size = new System.Drawing.Size(104, 48);
             // 
             // nimenustripClose
             // 
             this.nimenustripClose.Name = "nimenustripClose";
-            this.nimenustripClose.Size = new System.Drawing.Size(152, 22);
+            this.nimenustripClose.Size = new System.Drawing.Size(103, 22);
             this.nimenustripClose.Text = "Close";
             this.nimenustripClose.ToolTipText = "Close the application fully";
             this.nimenustripClose.Click += new System.EventHandler(this.nimenustripClose_Click);
@@ -201,7 +201,7 @@
             // nimenustripOpen
             // 
             this.nimenustripOpen.Name = "nimenustripOpen";
-            this.nimenustripOpen.Size = new System.Drawing.Size(152, 22);
+            this.nimenustripOpen.Size = new System.Drawing.Size(103, 22);
             this.nimenustripOpen.Text = "Open";
             this.nimenustripOpen.ToolTipText = "Open the application";
             this.nimenustripOpen.Click += new System.EventHandler(this.nimenustripOpen_Click);

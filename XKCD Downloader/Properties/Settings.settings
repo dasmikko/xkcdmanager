@@ -24,7 +24,7 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="update_check_interval" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">1</Value>
+      <Value Profile="(Default)">60</Value>
     </Setting>
     <Setting Name="check_for_new_comics_on_app_start" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>

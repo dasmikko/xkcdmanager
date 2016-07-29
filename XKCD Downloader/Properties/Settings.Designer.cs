@@ -108,7 +108,7 @@ namespace XKCD_Downloader.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        [global::System.Configuration.DefaultSettingValueAttribute("60")]
         public int update_check_interval {
             get {
                 return ((int)(this["update_check_interval"]));
