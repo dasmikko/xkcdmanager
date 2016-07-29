@@ -7,6 +7,6 @@ A simple yet effective way to get XKCD comics and archive them.
 - Getting the full list of comics
 - Easy searching through comics, via name or comic number.
 - Easy user-interface
-- Downloading single or multiple comics (TODO)
-- View comics (TODO)
-- Notification when new comes out (TODO)
+- Downloading single or multiple comics
+- View comics
+- Notification when new comes out

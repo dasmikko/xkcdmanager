@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace XKCD_Downloader
 {
+    [Serializable]
     class comic
     {
 
