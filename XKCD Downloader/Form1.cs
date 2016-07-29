@@ -219,7 +219,7 @@ namespace XKCD_Downloader
 
         private void notifyIcon1_BalloonTipClicked(object sender, EventArgs e)
         {
-            MessageBox.Show("You clicked the notification");
+            //MessageBox.Show("You clicked the notification");
         }
 
         private void viewComicButton_Click(object sender, EventArgs e)
