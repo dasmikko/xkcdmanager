@@ -13,14 +13,11 @@ A simple yet effective way to get XKCD comics and archive them.
 - Portable
 - Lightweight
 
+![](http://i.imgur.com/hLhOg1M.png)
 
 ## FAQ
-
-Q: How does the filter work?
-
-A: Simply time the name of the comic you are searching for.
-
-If you want to seach by comic number, just type the character "#" first and the number after.
-
+**Q:** How does the filter work?  
+**A:** Simply time the name of the comic you are searching for.
+If you want to seach by comic number, just type the character "#" first and the number after.  
 Example: #1234
 
