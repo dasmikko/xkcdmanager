@@ -9,7 +9,7 @@
       <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="download_location" Type="System.String" Scope="User">
-      <Value Profile="(Default)">xkcd\</Value>
+      <Value Profile="(Default)">Downloaded images\</Value>
     </Setting>
     <Setting Name="close_on_window_close" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
@@ -28,6 +28,9 @@
     </Setting>
     <Setting Name="check_for_new_comics_on_app_start" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="app_version" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1.0.0.5</Value>
     </Setting>
   </Settings>
 </SettingsFile>

@@ -110,13 +110,7 @@ namespace XKCD_Downloader
 
 
             // About tab
-            if (ApplicationDeployment.IsNetworkDeployed)
-            { 
-                settingsVersionLabel.Text = ApplicationDeployment.CurrentDeployment.CurrentVersion.ToString(4);
-            } else
-            {
-                settingsVersionLabel.Text = "Debug version";
-            }
+            settingsVersionLabel.Text = (String)Properties.Settings.Default["app_version"];
 
         }
 

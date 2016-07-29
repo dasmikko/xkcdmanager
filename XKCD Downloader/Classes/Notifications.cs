@@ -30,8 +30,6 @@ namespace XKCD_Downloader.Notifications
 
 
             //Console.WriteLine(Properties.Settings.Default["check_for_new_comics_last_check"]);
-
-            return true;
         }
 
         static Timer updatetimer;

@@ -49,7 +49,7 @@ namespace XKCD_Downloader.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("xkcd\\")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Downloaded images\\")]
         public string download_location {
             get {
                 return ((string)(this["download_location"]));
@@ -127,6 +127,18 @@ namespace XKCD_Downloader.Properties {
             }
             set {
                 this["check_for_new_comics_on_app_start"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1.0.0.5")]
+        public string app_version {
+            get {
+                return ((string)(this["app_version"]));
+            }
+            set {
+                this["app_version"] = value;
             }
         }
     }
